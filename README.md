@@ -22,5 +22,5 @@ Trouxe algumas melhorias simples mais eficiente.
 
 
 ## 🚀 Sobre mim
-Olá meu nome é Dieog Lopes e sou uma pessoa desenvolvedor Front-end estou na área há 2 anos, e estou estudano Nodejs para ampliar meu conhecimento também no back-end e ter uma percepção melhor das aplicações que desenvolvo.
+Olá meu nome é Diego Lopes e sou uma pessoa desenvolvedor Front-end estou na área há 2 anos, e estou estudano Nodejs para ampliar meu conhecimento também no back-end e ter uma percepção melhor das aplicações que desenvolvo.
 
