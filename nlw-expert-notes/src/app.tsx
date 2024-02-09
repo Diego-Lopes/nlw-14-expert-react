@@ -36,7 +36,7 @@ export function App() {
 
   }
 
-  function onNoteDeleted(id: string){
+  function onNoteDeleted(id: string) {
     const noteArray = notes.filter(note => note.id !== id)
 
     setNotes(noteArray)
@@ -78,7 +78,7 @@ export function App() {
                 {
                   filteredNotes.map((Note) => {
                     return (
-                      <NoteCard key={Note.id} note={Note} onNoteDeleted={onNoteDeleted}/>
+                      <NoteCard key={Note.id} note={Note} onNoteDeleted={onNoteDeleted} />
                     )
                   })
                 }
@@ -89,12 +89,21 @@ export function App() {
                 {
                   filteredNotes.map((Note) => {
                     return (
-                      <NoteCard key={Note.id} note={Note} onNoteDeleted={onNoteDeleted}/>
+                      <NoteCard key={Note.id} note={Note} onNoteDeleted={onNoteDeleted} />
                     )
                   })
                 }
               </>
             )
+        }
+
+        {
+          filteredNotes.length === 0 && (
+
+            <NewNoteCard onNoteCreated={onNoteCreated} />
+
+          )
+
         }
       </div>
     </div>
