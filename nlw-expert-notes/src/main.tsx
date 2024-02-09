@@ -9,7 +9,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
     <App />
     <Toaster
       duration={3000}
-      theme='system'
       richColors
     />
   </React.StrictMode>,
