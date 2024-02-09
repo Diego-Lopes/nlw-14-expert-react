@@ -2,6 +2,7 @@ import { ChangeEvent, useState } from 'react'
 import logo from './assets/logo-nlw-expert.svg'
 import { NewNoteCard } from './components/new-note-card'
 import { NoteCard } from './components/note-card'
+import { toast } from 'sonner'
 
 interface NotesProps {
   id: string,
@@ -41,6 +42,10 @@ export function App() {
 
     setNotes(noteArray)
     localStorage.setItem('notes', JSON.stringify(noteArray))
+
+    toast.success('Nota Deletada com Sucesso', {
+      duration: 3000
+    })
   }
 
   function handleSearch(event: ChangeEvent<HTMLInputElement>) {
