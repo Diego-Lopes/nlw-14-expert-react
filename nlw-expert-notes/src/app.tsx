@@ -98,7 +98,7 @@ export function App() {
         }
 
         {
-          filteredNotes.length === 0 && (
+          filteredNotes.length === 0 && search !== '' && (
 
             <NewNoteCard onNoteCreated={onNoteCreated} />
 
